@@ -23,8 +23,6 @@ Install next dependencies, babel, clsx, react-hook-forms :
 ```bash
 npm create next-app@latest
 
-npm install --save-dev @babel/core @babel/preset-env @babel/preset-react
-
 npm install clsx
 
 npm install react-hook-form
@@ -59,3 +57,4 @@ The API deployment is located at [https://node-backend-2-prod.up.railway.app/](h
 
 ## Deploy on Vercel
 
+You can find a preview of this deploy on [https://devto-reactchallenge.vercel.app/](https://devto-reactchallenge.vercel.app/)
