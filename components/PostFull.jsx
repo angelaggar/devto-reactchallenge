@@ -11,7 +11,7 @@ export default function PostFull() {
 
   useEffect(() => {
     fetch(
-      `https://node-backend-2-prod.up.railway.app/post/${id}`
+      `https://devto-back.vercel.app/post/${id}`
     )
       .then((res) => res.json())
       .then((data) => {

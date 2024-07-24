@@ -9,7 +9,7 @@ export default function Home() {
   const [posts, setPosts] = useState([])
   const [searchPosts, setSearchPosts] = useState([])
   useEffect(() => {
-    fetch('https://node-backend-2-prod.up.railway.app/post')
+    fetch('https://devto-back.vercel.app/post')
       .then((res) => res.json())
       .then((data) => setPosts(data.data))
       .catch((err) => console.log('unable to get posts', err))

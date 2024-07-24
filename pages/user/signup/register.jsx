@@ -16,7 +16,7 @@ export default function Register() {
   const [isChecked, setIsChecked] = useState(false)
 
   const onSubmit = (data) => {
-        fetch('https://node-backend-2-prod.up.railway.app/user', {
+        fetch('https://devto-back.vercel.app/user', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({

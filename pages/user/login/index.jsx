@@ -15,7 +15,7 @@ export default function Login() {
 
   function onSubmit(data) {
     fetch(
-      'https://node-backend-2-prod.up.railway.app/user/login',
+      'https://devto-back.vercel.app/user/login',
       {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -30,7 +30,7 @@ export default function Login() {
         if (json.data.token) {
           localStorage.setItem('token', json.data.token)
           fetch(
-            `https://node-backend-2-prod.up.railway.app/user/${data.email}`,
+            `https://devto-back.vercel.app/user/${data.email}`,
             {
               method: 'GET',
               headers: {

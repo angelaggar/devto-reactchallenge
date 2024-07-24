@@ -28,7 +28,7 @@ export default function NewPost() {
     const token = localStorage.getItem('token')
     if (token) {
       fetch(
-        'https://node-backend-2-prod.up.railway.app/post',
+        'https://devto-back.vercel.app/post',
         {
           method: 'POST',
           headers: {
